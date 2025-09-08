@@ -6,7 +6,15 @@ const nextConfig: NextConfig = {
     domains: ["proexweb.com", "localhost"],
     formats: ["image/webp", "image/avif"],
     qualities: [10, 20, 85, 100],
-    remotePatterns: [new URL("https://s3.proexweb.com/lacarmelamadrid/**")],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "s3.proexweb.com",
+        port: "",
+        pathname: "/lacarmelamadrid/**",
+        search: "",
+      },
+    ],
   },
   experimental: {
     optimizePackageImports: ["lucide-react"],

@@ -140,7 +140,7 @@ export function PhotoModal({
         </button>
       </div>
       <div className="centered-text absolute bottom-4 left-1/2 transform -translate-x-1/2 text-center backdrop-blur-2xl p-2.5 rounded-full">
-        <p className="text-shadow-lg">
+        <p className="text-shadow-lg w-full mx-2">
           Swipe, use arrow keys, or click arrows to navigate, tap image to close
         </p>
       </div>
