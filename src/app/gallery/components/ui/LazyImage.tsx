@@ -80,13 +80,13 @@ export function LazyImage({
           src={photo.src()}
           alt=""
           fill
-          priority={false}
           sizes="20"
+          priority={false}
           className={`object-cover transition-opacity duration-300 cursor-pointer hover:opacity-95 ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={handleLoad}
-          quality={85}
+          quality={20}
         />
       )}
     </div>

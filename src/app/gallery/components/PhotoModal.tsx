@@ -79,7 +79,7 @@ export function PhotoModal({
     if (touchStartRef.current !== null && e.changedTouches.length === 1) {
       const touchEnd = e.changedTouches[0].clientX;
       const swipeDistance = touchEnd - touchStartRef.current;
-      const minSwipeDistance = 50;
+      const minSwipeDistance = 70;
 
       if (swipeDistance > minSwipeDistance) {
         onPrev();
@@ -116,7 +116,8 @@ export function PhotoModal({
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setIsLoaded(true)}
-          priority
+          quality={85}
+          priority={true}
         />
 
         <button

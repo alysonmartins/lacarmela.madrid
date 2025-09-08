@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["proexweb.com", "localhost"],
     formats: ["image/webp", "image/avif"],
-    qualities: [10, 85, 90, 100],
+    qualities: [10, 20, 85, 100],
     remotePatterns: [new URL("https://s3.proexweb.com/lacarmelamadrid/**")],
   },
   experimental: {
