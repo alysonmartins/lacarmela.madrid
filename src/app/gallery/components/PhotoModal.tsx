@@ -107,7 +107,7 @@ export function PhotoModal({
           </div>
         )}
 
-        <Image
+        <img
           src={photo.originalSrc()}
           alt=""
           width={photo._width}
@@ -116,8 +116,8 @@ export function PhotoModal({
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
           onLoad={() => setIsLoaded(true)}
-          quality={85}
-          priority={true}
+          // quality={85}
+          // priority={true}
         />
 
         <button
