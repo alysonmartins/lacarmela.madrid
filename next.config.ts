@@ -15,6 +15,8 @@ const nextConfig: NextConfig = {
         search: "",
       },
     ],
+    unoptimized: true, // Disables Next.js image optimization to allow any source
+    // WARNING: This removes many performance benefits
   },
   experimental: {
     optimizePackageImports: ["lucide-react"],
