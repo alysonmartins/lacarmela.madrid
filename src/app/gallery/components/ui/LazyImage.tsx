@@ -67,7 +67,6 @@ export function LazyImage({
             alt=""
             fill
             sizes="20"
-            loading="lazy"
             priority={false}
             className="object-cover filter blur-sm"
             quality={10}
@@ -81,7 +80,6 @@ export function LazyImage({
           src={photo.src()}
           alt=""
           fill
-          loading="lazy"
           priority={false}
           sizes="20"
           className={`object-cover transition-opacity duration-300 cursor-pointer hover:opacity-95 ${
