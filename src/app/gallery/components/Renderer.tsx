@@ -92,7 +92,18 @@ export function Renderer({ config, containerWidth }: VerticalRendererProps) {
   return (
     <div className="w-full">
       {Object.entries(config.data)
-        .sort(([b], [a]) => a.localeCompare(b)) // Ordenação alfabética
+        .sort(([a], [b]) => {
+          // a e b são os nomes das seções (ex: "10-08-25")
+          const [dayA, monthA, yearA] = a.split("-").map(Number);
+          const [dayB, monthB, yearB] = b.split("-").map(Number);
+
+          // Cria um objeto de data no formato 'YYYY-MM-DD' para garantir a comparação correta.
+          const dateA = new Date(2000 + yearA, monthA - 1, dayA);
+          const dateB = new Date(2000 + yearB, monthB - 1, dayB);
+
+          // Compara as datas. `dateB - dateA` ordena do mais recente para o mais antigo.
+          return dateB.getTime() - dateA.getTime();
+        })
         .map(([sectionName, photoData]) => {
           const photos = photoData.map((p) => new Photo(p));
           const { stacks, width } = createSection(sectionName, photos);

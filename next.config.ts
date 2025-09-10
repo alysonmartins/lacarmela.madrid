@@ -10,9 +10,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "s3.proexweb.com",
-        port: "",
         pathname: "/lacarmelamadrid/**",
-        search: "",
       },
     ],
     unoptimized: true, // Disables Next.js image optimization to allow any source

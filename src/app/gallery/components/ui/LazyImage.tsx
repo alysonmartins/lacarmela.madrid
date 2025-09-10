@@ -81,7 +81,7 @@ export function LazyImage({
           alt=""
           fill
           sizes="20"
-          priority={false}
+          priority
           className={`object-cover transition-opacity duration-300 cursor-pointer hover:opacity-95 ${
             isLoaded ? "opacity-100" : "opacity-0"
           }`}
