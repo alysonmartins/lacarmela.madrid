@@ -1,6 +1,4 @@
 import Navigation from "@/app/components/Navigation";
-import HomeFooter from "@/app/components/HomeFooter";
-import FourvenuesContent from "../components/FourvenuesContent";
 
 export default function Reservas() {
   return (

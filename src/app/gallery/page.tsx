@@ -15,7 +15,6 @@ async function getGalleryData() {
     }
     const result = await response.json();
     console.log("Lista de fotos carregada");
-    console.log(result);
     return result;
   } catch (error) {
     console.error("Failed to fetch gallery data, using offline data.");

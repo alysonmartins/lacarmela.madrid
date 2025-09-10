@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
 import { Photo } from "@/app/gallery/types/gallery";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 

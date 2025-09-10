@@ -5,7 +5,7 @@ interface FooterProps {
   instagram?: string;
 }
 
-export function Footer({ fullName, instagram }: FooterProps) {
+export function Footer({ instagram }: FooterProps) {
   if (!instagram) return null;
 
   return (
