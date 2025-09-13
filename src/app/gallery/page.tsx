@@ -1,4 +1,3 @@
-"use client";
 import { Gallery } from "@/app/gallery/components/Gallery";
 import { Header } from "@/app/gallery/components/Layout/Header";
 import { Footer } from "@/app/gallery/components/Layout/Footer";
