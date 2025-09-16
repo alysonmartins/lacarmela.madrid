@@ -19,5 +19,13 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://s3.proexweb.com/lacarmelamadrid/:path*",
+      },
+    ];
+  },
 };
 export default nextConfig;
